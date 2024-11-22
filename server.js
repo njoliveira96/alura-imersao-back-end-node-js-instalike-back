@@ -1,8 +1,6 @@
 import express from "express";
 import routes from "./src/routes/postsRoutes.js";
 // Importa o módulo Express para criar o servidor web
-
-
 /* // Array de posts inicial (pode ser removido após a conexão com o banco de dados)
 const posts = [
     {
@@ -21,12 +19,9 @@ const posts = [
         imagem: "https://placeimg.com/300/200/animals"
     }
 ]; */
-
 const app = express();
 // Cria uma instância do Express para iniciar o servidor.
-
 routes(app)
-
 app.listen(3000, () => {
   console.log("Servidor escutando na porta 3000");
 });
